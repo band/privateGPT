@@ -71,7 +71,7 @@ LOADER_MAPPING = {
     ".eml": (MyElmLoader, {}),
     ".epub": (UnstructuredEPubLoader, {}),
     ".html": (UnstructuredHTMLLoader, {}),
-    ".md": (UnstructuredMarkdownLoader, {}),
+    ".md": (TextLoader, {}),
     ".odt": (UnstructuredODTLoader, {}),
     ".pdf": (PDFMinerLoader, {}),
     ".ppt": (UnstructuredPowerPointLoader, {}),
