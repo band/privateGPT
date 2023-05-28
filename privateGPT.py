@@ -52,12 +52,13 @@ def main():
         print("\n\n> Question:")
         print(query)
         print("\n> Answer:")
-        print(answer)
+        from pprint import pprint
+        pprint(answer)
 
         # Print the relevant sources used for the answer
         for document in docs:
             print("\n> " + document.metadata["source"] + ":")
-            print(document.page_content)
+#            print(document.page_content)
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='privateGPT: Ask questions to your documents without an internet connection, '
