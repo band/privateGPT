@@ -27,10 +27,10 @@ from langchain.docstore.document import Document
 from constants import CHROMA_SETTINGS
 
 
-load_dotenv()
-
 
 # Load environment variables
+load_dotenv()
+
 persist_directory = os.environ.get('PERSIST_DIRECTORY')
 source_directory = os.environ.get('SOURCE_DIRECTORY', 'source_documents')
 embeddings_model_name = os.environ.get('EMBEDDINGS_MODEL_NAME')
@@ -71,7 +71,7 @@ LOADER_MAPPING = {
     ".eml": (MyElmLoader, {}),
     ".epub": (UnstructuredEPubLoader, {}),
     ".html": (UnstructuredHTMLLoader, {}),
-    ".md": (TextLoader, {}),
+    ".md": (TextLoader, {"encoding": "utf8"}),
     ".odt": (UnstructuredODTLoader, {}),
     ".pdf": (PDFMinerLoader, {}),
     ".ppt": (UnstructuredPowerPointLoader, {}),
