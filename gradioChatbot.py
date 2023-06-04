@@ -1,5 +1,12 @@
 #! /usr/bin/env python
+"""
+2023-06-04: code based on this Medium post:
+<https://levelup.gitconnected.com/free-open-source-alternative-to-chatgpt-gpt4all-ad5828e4dcae>
 
+- seems to require only two PyPi modules: gpt4all, gradio
+- this code uses a smaller model than specified in the Medium post (to work well on my PC)
+
+"""
 from gpt4all import GPT4All
 gpt = GPT4All("ggml-gpt4all-j-v1.3-groovy.bin")
 
