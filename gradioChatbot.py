@@ -11,8 +11,6 @@ from gpt4all import GPT4All
 gpt = GPT4All("ggml-gpt4all-j-v1.3-groovy.bin")
 
 import gradio as gr
-import random
-import time
 
 messages = []
 
